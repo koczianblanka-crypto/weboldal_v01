@@ -6,33 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blanka weboldala</title>
     <style>
+        body {
+            background-color: #0f172a;
+        }
+
         .videos {
-            width: 1080px;}
+            width: 100%;
+            max-width: 1080px;
+            display: block;
+            margin: 27px auto;
+            border-radius: 16px;
+            overflow: hidden;
+
+        }
+
         .images5555 {
-            width: 720px; text-align:center ;
+            display: block;
+            width: 100%;
+            max-width: 720px;
+            display: block;
+            git add . text-align: center;
+            margin: 15px auto;
+            counter-reset: 5px;
+            border-radius: 16px;
+
+        }
+
+
+        .szoveg {
+            color: #0f172a;
+            font-family: 'Plus Jakarta Sans', -apple-system, 'Segoe UI', sans-serif;
+            line-height: 1.5;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+
+        h1.szoveg {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            text-align: center;
+
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+        }
+
+        h3.szoveg {
+            font-size: 1.15rem;
+            font-weight: 400;
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        h2.szoveg {
+            font-size: 1.5rem;
+            color: #e2e8f0;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            text-align: center;
         }
     </style>
-    <script>
-        // alert('szevasz')
-        prompt('szia');
-        confirm('üdv!')
-    </script>
+
+
 </head>
 
 <body>
-    <h1>Ki vagyok én?</h1>
-    <h3>Animációs diplomám van, amit a Budapesti Metropolitan Egyetemen szereztem</h3>
-    <h1>Mit szeretek csinálni?</h1>
-    <h3>Animálni, Rajzolni, Festeni, Horgolni, Sportolni, Kreatív dolgokat alkotni</h3>
-    <h2>3D munkám:</h2>
-    <img class="images5555" src="image/Metu_Swatch_Koczian_Blanka_v01.JPG" alt="">
-    <img class="images5555" src="image/Metu_Swatch_Koczian_Blanka_v02.JPG" alt="">
+    <h1 class="szoveg">Blanka Portfóliója</h1>
+    <h3 class="szoveg">3D Modellek, Textúrák, Animációk, Rajzanimációk</h3>
 
-    <video autoplay muted src="video/koczian_blanka_after_effects.mp4"></video>
-    <video autoplay muted src="video/Showreelanyag02.mov"></video>
-    <video class="videos" autoplay muted src="video/TerkepAnim.mp4"></video>
+    <h1 class="szoveg">Rólam</h1>
+    <h2 class="szoveg">Szeretek:</h2>>
+    <h3 class="szoveg"> Animálni, Rajzolni, Festeni, Horgolni, Sportolni, Kreatív dolgokat alkotni</h3>
+    <h3 class="szoveg"> 22 éves</h3>
+    <h3 class="szoveg"> Animációs diploma</h3>
+    <h2 class="szoveg">3D munkák:</h2>
+    <img class="images5555" src="image/Metu_Swatch_Koczian_Blanka_v01.JPG" alt="3D munka 1">
+    <img class="images5555" src="image/Metu_Swatch_Koczian_Blanka_v02.JPG" alt="3D munka 2">
 
-
+    <h2 class="szoveg">Videók:</h2>
+    <video class="videos" autoplay muted loop playsinline controls src="video/koczian_blanka_after_effects.mp4"></video>
+    <video class="videos" autoplay muted loop playsinline controls src="video/Showreelanyag02.mov"></video>
+    <video class="videos" autoplay muted loop playsinline controls src="video/TerkepAnim.mp4"></video>
 </body>
 
 </html>
